@@ -19,3 +19,5 @@ echo "messageinbase64" | base64 -d
 
 
 Se ho file .pcap apro nel programma apposito (Wireshark.)
+
+' or 1=1-- 
