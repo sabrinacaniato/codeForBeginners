@@ -1,5 +1,13 @@
 import base64
 
+def ceasar_cracker(text, from_ = -30, to_=+30):
+    for i in range(from_, to_): #possible keys [-30, 30]
+        #decode
+        curr_step = ''.join([chr(ord(c) + i) for c in text])
+
+        #print
+        print(f"Step={i}\t{curr_step}")
+
 def hex2string(text):
     ascii_string =  bytes.fromhex(text).decode('utf-8', errors="ignore") 
     return ascii_string
